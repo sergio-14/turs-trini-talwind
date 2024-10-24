@@ -1,0 +1,424 @@
+/* Style the links inside the sidenav */
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+ 
+::-webkit-scrollbar-track {
+  background: rgb(2, 1, 54);
+  height: 300px;
+}
+
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 255, 106);
+}
+
+#contenidotool {
+  width: 200px;
+}
+
+
+.titlesuperior {
+  font-family: "Anton";
+  font-size: 70px;
+}
+.textdescripcion {
+  font-family: "Anton";
+  font-size: 30px;
+}
+
+.text {
+  font-family: "Anton";
+  font-size: 18px;
+}
+.text1 {
+  font-family: "Anton";
+}
+
+.fontII {
+  font-family: "Lora";
+}
+.bg-home {
+  background: rgba(255, 255, 255, 0.171);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-start-start-radius: 15px;
+  color: white;
+}
+
+body {
+  background-image: linear-gradient(to right, rgb(4, 13, 19), rgb(1, 20, 32));
+}
+
+.textsecondary {
+  color: rgb(255, 255, 255);
+}
+.textprimary {
+  color: rgb(255, 239, 22); 
+      
+}
+.textsucces {
+  color: rgb(8, 255, 111);
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px;
+  background-attachment: scroll;
+  mask-image: linear-gradient(black 90%, transparent);
+}
+.contenidohome {
+  position: absolute;
+  right: 8%; /* Alinea a la derecha */
+  top: 60%; /* Centra verticalmente */
+  transform: translateY(
+    -80%
+  ); 
+  padding-right: 20px;  
+}
+
+.conuab {
+  position: relative;
+}
+.imguab {
+  width: 440px;
+  height: 350px;
+  position: absolute;
+  bottom: 3%;
+  left: 18%;
+  opacity: 50%;
+}
+
+.imghome {
+  max-height: 100vh;
+  padding: 40px;
+  width: 690px;
+  height: 630px;
+  mask-image: linear-gradient(black 65%, transparent);
+
+  position: relative; 
+  animation: slideAnimation 5s infinite;  
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);  
+    opacity: 1;  
+  }
+  50% {
+    transform: translateX(200px);  
+    opacity: 0;  
+  }
+  51% {
+    transform: translateX(
+      -400px
+    );  
+    opacity: 0;  
+  }
+  100% {
+    transform: translateX(0);  
+    opacity: 1;  
+  }
+}
+
+.imgmap {
+  width: 320px;
+  height: 290px;
+  mask-image: linear-gradient(black 75%, transparent);
+  animation: bounce 2s infinite;
+}
+.imgmapas {
+  width: 450px;
+  height: 100%;
+  object-fit: cover;
+  mask-image: linear-gradient(black 75%, transparent);
+  position: relative;
+  z-index: 1000;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-40px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+main {
+  overflow: hidden;
+}
+.seccont {
+  position: relative;
+}
+.neon {
+  width: 80px;
+  height: 280px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgb(66, 172, 5),
+    rgb(198, 233, 141)
+  );  
+  position: absolute;  
+  top: -10%;  
+  left: 20%;  
+  transform: translate(-50%, -50%);  
+  filter: blur(38px);
+  opacity: 20%;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.neon1 {
+  width: 250px;
+  height: 180px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgb(74, 190, 6),
+    rgb(194, 207, 79)
+  );  
+  position: absolute;  
+  top: -15%;  
+  left: 20%;  
+  transform: translate(-50%, -50%);  
+  filter: blur(58px);
+  opacity: 20%;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.neon2 {
+  width: 80px;
+  height: 380px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgb(38, 129, 10),
+    rgb(94, 207, 79)
+  );  
+  position: absolute; 
+  top: -10%;  
+  left: 40%;  
+  transform: translate(-50%, -50%);  
+  filter: blur(38px);
+  opacity: 20%;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.neon3 {
+  width: 270px;
+  height: 180px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgb(28, 128, 8),
+    rgb(79, 207, 79)
+  );  
+  position: absolute; 
+  top: -15%; 
+  left: 40%;  
+  transform: translate(-50%, -50%); 
+  filter: blur(58px);
+  opacity: 20%;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.neon4 {
+  width: 80px;
+  height: 490px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgb(9, 158, 22),
+    rgb(94, 207, 79)
+  );  
+  position: absolute; 
+  top: -10%;  
+  left: 60%;  
+  transform: translate(-50%, -50%);  
+  filter: blur(38px);
+  opacity: 30%;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.neon5 {
+  width: 250px;
+  height: 180px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgb(31, 155, 7),
+    rgb(120, 207, 79)
+  );  
+  position: absolute; 
+  top: -15%;  
+  left: 60%;  
+  transform: translate(-50%, -50%);  
+  filter: blur(58px);
+  opacity: 20%;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.neon6 {
+  width: 80px;
+  height: 340px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgb(8, 168, 8),
+    rgb(94, 207, 79)
+  );  
+  position: absolute;  
+  top: -10%;  
+  left: 85%;  
+  transform: translate(-50%, -50%);  
+  filter: blur(38px);
+  opacity: 30%;
+  z-index: -1;
+  transform: rotate(55deg);
+}
+.neon7 {
+  width: 220px;
+  height: 180px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgb(28, 97, 6),
+    rgb(73, 153, 70)
+  );  
+  position: absolute;  
+  top: -15%;  
+  left: 80%;  
+  transform: translate(-50%, -50%);  
+  filter: blur(58px);
+  opacity: 20%;
+  z-index: -1;
+  transform: rotate(55deg);
+}
+.neon8 {
+  width: 560px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgb(48, 121, 14),
+    rgb(60, 158, 77)
+  );  
+  position: absolute;  
+  bottom: -20%;  
+  left: 20%;  
+  transform: translate(-50%, -50%); 
+  filter: blur(58px);
+  opacity: 20%;
+  z-index: -1;  
+}
+
+#servicios {
+  position: relative;  
+  width: 100%;
+  height: 400px;  
+}
+
+.neon-poin2 {
+  width: 560px;
+  height: 280px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgb(0, 174, 255),
+    rgb(80, 243, 255)
+  );  
+  position: absolute;  
+  bottom: -80%;  
+  left: 10%;  
+  transform: translate(-50%, -50%);  
+  filter: blur(58px);
+  opacity: 20%;
+  z-index: -1;  
+}
+.neon-poin3 {
+  width: 460px;
+  height: 180px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    rgb(195, 42, 255),
+    rgb(52, 255, 144)
+  );  
+  position: absolute;  
+  top: 85%;  
+  left: 80%;  
+  transform: translate(-50%, -50%);  
+  filter: blur(58px);
+  opacity: 40%;
+  z-index: -1;  
+}
+
+#team {
+  position: relative;  
+  width: 100%;
+  height: 600px;  
+}
+
+.neon-point {
+  width: 360px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgb(8, 165, 157);  
+  position: absolute;  
+  top: 10%;  
+  left: 10%;  
+  transform: translate(-50%, -50%);  
+  filter: blur(58px);
+  opacity: 30%;
+  z-index: -1; 
+}
+.neon-point1 {
+  width: 560px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgb(9, 209, 149); 
+  position: absolute; 
+  bottom: -20%;  
+  right: -20%;  
+  transform: translate(-50%, -50%);  
+  filter: blur(58px);
+  opacity: 30%;
+  z-index: -1; 
+}
+
+@media (max-width: 768px) {
+  .imguab{
+    width: 200px;
+    height: 230px;
+  }
+  .imghome{
+    width: 350px ;
+    height: 390px ;
+  }
+  .titlesuperior{
+    font-size: 30px;
+  }
+  .contenidohome {
+   
+    right: 8%; 
+    top: 70%; 
+    transform: translateY(
+      -80%
+    ); 
+    padding-right: 20px;
+  }
+  .conuab {
+    height: 600px;
+  }
+
+}
+
+
+
+
+
